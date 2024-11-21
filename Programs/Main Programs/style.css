@@ -7,18 +7,21 @@ header {
     height: 94px;
     display: flex;
     align-items: center; /* Центрує текст по вертикалі */
+    gap: 120px;
     justify-content: start; /* Центрує текст по горизонталі */
     padding: 10px;
     background-color: #232220; /* Колір фону header */
+    
 }
 
 .logo-text {
     margin: 0; /* Відсутність зовнішніх відступів */
     font-family: "Lalezar", system-ui;
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 400;
     font-style: normal;
     color: white; /* Основний колір тексту */
+    cursor: pointer;
 }
 
 .green {
@@ -28,6 +31,41 @@ header {
 .power {
     background-color: #225821; /* Колір фону для Power */
     color: white; /* Білий текст поверх зеленого фону */
-    padding: 5px 10px; /* Внутрішній відступ для Power */
-    border-radius: 5px; /* Заокруглення кутів */
+    height: 50px;
+    padding: 2px 15px; /* Внутрішній відступ для Power */
+    border-radius: 20px; /* Заокруглення кутів */
+}
+.navbar-header{
+    display: flex;
+    width: auto;
+    gap: 20px;
+}
+.nav-text{
+    font-family: "Inter", system-ui ;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+.sign-div{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.sign-in-text{
+    font-family: "Inter", system-ui ;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+.sign-up-text{
+    background-color: #225821;
+    font-family: "Inter", system-ui ;
+    border-radius: 20px;
+    padding: 15px 39px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
 }
