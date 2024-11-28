@@ -7,7 +7,7 @@ header {
     height: 94px;
     display: flex;
     align-items: center; /* Центрує текст по вертикалі */
-    gap: 120px;
+    gap: 100px;
     justify-content: start; /* Центрує текст по горизонталі */
     padding: 10px;
     background-color: #232220; /* Колір фону header */
@@ -69,3 +69,83 @@ header {
     font-size: 17px;
     cursor: pointer;
 }
+.services-section {
+    margin: 0;
+    font-family: 'Lalezar', sans-serif;
+    color: white;
+    position: relative;
+    padding: 50px 20px; /* Збільшено відступ зверху */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Вирівнювання по вертикалі */
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.services-title {
+    font-size: 60px;
+    margin-bottom: 50px; /* Збільшено відстань між заголовком і картками */
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Зменшено проміжок між картками */
+}
+
+.service-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end; /* Вирівнювання тексту по низу */
+    justify-content: center;
+}
+
+.service-card-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.service-text {
+    position: absolute;
+    bottom: 20px; /* Текст ближче до низу зображення */
+    width: 100%;
+    text-align: center;
+    font-family: 'Lalezar', sans-serif;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Тінь для тексту */
+}
+.overlay-text {
+    width: 1000px;
+    font-family: 'Lalezar', sans-serif;
+    font-size: 140px;
+    color: rgba(255, 255, 255, 0.05); /* Напівпрозорий білий текст */
+    text-align: center;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Тінь для глибини */
+    position: absolute;
+    filter: blur(3px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -135%); /* Центрування */
+    z-index: -1; /* Текст знаходиться позаду інших елементів */
+}
+.overlay-text-mini{
+   width: 300px;
+    font-family: 'Lalezar', sans-serif;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.3); /* Напівпрозорий білий текст */
+    text-align: center;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.01); /* Тінь для глибини */
+    position: absolute;
+    /* filter: blur(0.5px); */
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, 290%); /* Центрування */
+    z-index: 1; /* Текст знаходиться позаду інших елементів */
+}
+
