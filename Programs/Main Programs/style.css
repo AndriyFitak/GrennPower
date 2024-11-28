@@ -90,6 +90,7 @@ header {
 .services-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 50px; /* Зменшено проміжок між картками */
 }
 
@@ -135,17 +136,34 @@ header {
     z-index: -1; /* Текст знаходиться позаду інших елементів */
 }
 .overlay-text-mini{
-   width: 300px;
+    width: 500px;
     font-family: 'Lalezar', sans-serif;
     font-size: 25px;
-    color: rgba(255, 255, 255, 0.3); /* Напівпрозорий білий текст */
+    color: rgba(255, 255, 255, 0.1); /* Напівпрозорий білий текст */
     text-align: center;
-    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.01); /* Тінь для глибини */
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.001); /* Тінь для глибини */
     position: absolute;
-    /* filter: blur(0.5px); */
+    filter: blur(10px);
     top: 50%;
     left: 50%;
     transform: translate(-60%, 290%); /* Центрування */
     z-index: 1; /* Текст знаходиться позаду інших елементів */
 }
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-0%);
+    font-size: 48px;
+    color: #0f0;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+}
 
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
