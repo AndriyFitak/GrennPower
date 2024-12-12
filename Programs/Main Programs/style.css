@@ -8,10 +8,10 @@ header {
     display: flex;
     align-items: center; /* Центрує текст по вертикалі */
     gap: 100px;
-    justify-content: start; /* Центрує текст по горизонталі */
+    justify-content: center; /* Центрує текст по горизонталі */
     padding: 10px;
     background-color: #232220; /* Колір фону header */
-    
+    user-select: none;
 }
 
 .logo-text {
@@ -139,22 +139,23 @@ header {
     width: 500px;
     font-family: 'Lalezar', sans-serif;
     font-size: 25px;
-    color: rgba(255, 255, 255, 0.1); /* Напівпрозорий білий текст */
+    color: rgba(255, 255, 255, 0.4); /* Напівпрозорий білий текст */
     text-align: center;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.001); /* Тінь для глибини */
     position: absolute;
-    filter: blur(10px);
+    filter: blur(2px);
     top: 50%;
     left: 50%;
     transform: translate(-60%, 290%); /* Центрування */
     z-index: 1; /* Текст знаходиться позаду інших елементів */
+    user-select: none;
 }
 .arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-0%);
-    font-size: 48px;
-    color: #0f0;
+    font-size: 90px;
+    color: #225821;
     cursor: pointer;
     user-select: none;
     z-index: 10;
@@ -166,4 +167,74 @@ header {
 
 .right-arrow {
     right: 10px;
+}
+.offers-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px; /* Зменшено верхній і нижній відступи секції */
+    gap: 5px; /* Зменшено проміжок між текстом і блоками */
+    font-family: 'Lalezar', sans-serif;
+}
+
+.offers-text-page {
+    font-size: 120px;
+    margin: 0; /* Забрано зовнішні відступи */
+    line-height: 2; /* Зменшено міжрядковий інтервал */
+}
+
+.div-all-offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Відстань між блоками */
+}
+
+.offer-block {
+    font-family: 'Lalezar', sans-serif;
+    background-color: black;
+    width: 474px;
+    height: 800px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    line-height: 40px;
+    flex-direction: column;
+    color: white;
+    align-items: flex-start; /* Вирівнювання вмісту по лівому верхньому краю */
+    justify-content: flex-start; /* Вміст починається з верху блоку */
+    text-align: left;
+}
+
+.offer-block h2 {
+    width: 100px;
+    font-family: 'Lalezar', sans-serif;
+    align-items: start;
+    font-size: 35px;
+    margin: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: flex-start; /* Вирівнювання вмісту по лівому верхньому краю */
+    justify-content: flex-start; /* Вміст починається з верху блоку */
+    text-align: left; /* Вирівнювання тексту по лівому краю */
+}
+
+.rotated-text {
+    transform: rotate(-90deg);
+    font-family: 'Lalezar', sans-serif;
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.1);
+    filter: blur(2px);
+    white-space: nowrap;
+}
+
+.offers-text-page{
+    font-size: 120px;
+    color: white;
+}
+.all-offer-text{
+    font-size: 40px;
 }
