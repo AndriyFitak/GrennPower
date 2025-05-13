@@ -238,3 +238,12 @@ header {
 .all-offer-text{
     font-size: 40px;
 }
+.h2-block{
+    display: flex;
+    gap: 40px;
+}
+.all-offer-h2-text{
+    font-size: 50px;
+    width: 200px;
+    line-height: 55px;
+}
